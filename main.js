@@ -90,10 +90,8 @@ const filterInput = document.getElementById("filter__input");
 // Espero el evento "keyup" que es cuando dejo de presionar una tecla
 filterInput.addEventListener("keyup", (e) => {
 
-    // Tomo el valor ingresado en el input y lo paso a minuscula, creo un nuevo arreglo productosFilter que va a guardar los productos filtrados bajo la condicion de que si el nombre del producto(en minuscula) contiene el valor del input
-
-    // Creo una variable productosFilter y le asigno un nuevo arreglo donde filtro los productos que en el nombre(en minuscula) contengan el valor del input(en minuscula)
-    const productosFilter = productosEnStorage.filter((item) => item.nombre.toLowerCase().includes(e.target.value.toLowerCase()));
+// Creo una variable productosFilter y le asigno un nuevo arreglo donde filtro los productos que en el nombre(en minuscula) contengan el valor del input(en minuscula)
+const productosFilter = productosEnStorage.filter((item) => item.nombre.toLowerCase().includes(e.target.value.toLowerCase()));
 
     if (e.target.value !== "") {
         // Si se escribio algo en el input muestro el arreglo filtrado

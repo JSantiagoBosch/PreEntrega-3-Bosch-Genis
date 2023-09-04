@@ -1,0 +1,43 @@
+.imgProducts{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-top: 1rem;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+.colorBoton{
+    color: #fafafa;
+    background-color: #85bb65;
+}
+
+.colorBoton:hover{
+    background-color: green;
+    color: #fafafa;
+}
+
+#filter__input{
+    display: block; 
+    margin: auto; 
+    width: 40%
+}
+
+#carritoTable{
+    display: none;
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    width: 30%;
+    height: auto;
+    background-color: whitesmoke;
+    z-index: 1001;
+}
+#agregar__producto{
+    display: none;
+}
